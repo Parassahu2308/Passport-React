@@ -1,8 +1,11 @@
+var GoogleStrategy = require("passport-google-oauth20").Strategy;
 const passport = require("passport");
+
+//Google keys
 const { GOOGLE_CLIENT_ID } = require("./Keys/keys");
 const { GOOGLE_CLIENT_SECRET } = require("./Keys/keys");
-var GoogleStrategy = require("passport-google-oauth20").Strategy;
 
+//Google Auth
 passport.use(
   new GoogleStrategy(
     {
